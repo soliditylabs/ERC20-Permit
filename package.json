@@ -1,0 +1,45 @@
+{
+  "name": "@soliditylabs/erc20-permit",
+  "version": "0.1.0",
+  "description": "Package for implementing the ERC20 permit (EIP-2612)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soliditylabs/ERC20-permit.git"
+  },
+  "keywords": [
+    "ERC20",
+    "ERC20-Permit",
+    "Permit",
+    "EIP-2612",
+    "Solidity"
+  ],
+  "author": "Markus Waas (mail@markuswaas.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/soliditylabs/ERC20-permit/issues"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "homepage": "https://github.com/soliditylabs/ERC20-permit#readme",
+  "devDependencies": {
+    "@nomiclabs/buidler": "^1.4.7",
+    "@nomiclabs/buidler-ethers": "^2.0.0",
+    "@nomiclabs/buidler-waffle": "^2.1.0",
+    "@nomiclabs/buidler-web3": "^1.3.4",
+    "@openzeppelin/contracts": "^3.2.1-solc-0.7",
+    "buidler-deploy": "^0.6.0-beta.16",
+    "chai": "^4.2.0",
+    "eth-permit": "^0.1.7",
+    "ethereum-waffle": "^3.1.1",
+    "ethereumjs-common": "^1.5.2",
+    "ethereumjs-tx": "^2.1.2",
+    "ganache-cli": "^6.11.0",
+    "solc": "^0.7.2",
+    "web3": "^1.3.0"
+  }
+}
