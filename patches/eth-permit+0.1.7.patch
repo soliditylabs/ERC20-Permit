@@ -1,0 +1,21 @@
+diff --git a/node_modules/eth-permit/dist/rpc.js b/node_modules/eth-permit/dist/rpc.js
+index 050c552..d993dec 100644
+--- a/node_modules/eth-permit/dist/rpc.js
++++ b/node_modules/eth-permit/dist/rpc.js
+@@ -14,6 +14,7 @@ const randomId = () => Math.floor(Math.random() * 10000000000);
+ exports.send = (provider, method, params) => new Promise((resolve, reject) => {
+     const payload = {
+         id: randomId(),
++        jsonrpc: '2.0', 
+         method,
+         params,
+     };
+@@ -38,7 +39,7 @@ exports.send = (provider, method, params) => new Promise((resolve, reject) => {
+ });
+ exports.signData = (provider, fromAddress, typeData) => __awaiter(void 0, void 0, void 0, function* () {
+     const _typeData = typeof typeData === 'string' ? typeData : JSON.stringify(typeData);
+-    const result = yield exports.send(provider, 'eth_signTypedData_v4', [fromAddress, _typeData]);
++    const result = yield exports.send(provider, 'eth_signTypedData', [fromAddress, JSON.parse(_typeData)]);
+     return {
+         r: result.slice(0, 66),
+         s: '0x' + result.slice(66, 130),
