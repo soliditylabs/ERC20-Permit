@@ -1,4 +1,4 @@
-const { expect } = require("chai");
+const { expect, assert } = require("chai");
 const { signERC2612Permit } = require("eth-permit");
 const Common = require("ethereumjs-common");
 const { Transaction } = require("ethereumjs-tx");
@@ -89,6 +89,7 @@ describe("ERC20Permit", () => {
       await web3.eth.sendSignedTransaction(
         "0x" + replayTx.serialize().toString("hex")
       );
+      assert.fail("Replay tx should fail");
     } catch (error) {
       expect(error.message).to.contain("ERC20Permit: invalid signature");
     }
