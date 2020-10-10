@@ -1,6 +1,6 @@
 {
   "name": "@soliditylabs/erc20-permit",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Package for implementing the ERC20 permit (EIP-2612)",
   "main": "index.js",
   "scripts": {
@@ -43,6 +43,5 @@
   },
   "directories": {
     "test": "test"
-  },
-  "dependencies": {}
+  }
 }
