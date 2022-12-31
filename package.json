@@ -33,7 +33,7 @@
     "buidler-deploy": "^0.6.0-beta.16",
     "chai": "^4.2.0",
     "eth-permit": "^0.1.7",
-    "ethereum-waffle": "^3.1.1",
+    "ethereum-waffle": "^4.0.7",
     "ethereumjs-common": "^1.5.2",
     "ethereumjs-tx": "^2.1.2",
     "ganache-cli": "^6.11.0",
